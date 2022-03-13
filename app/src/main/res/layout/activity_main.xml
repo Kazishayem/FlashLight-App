@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#546365"
+    tools:context=".MainActivity"
+    tools:ignore="HardcodedText">
+
+    <!--This is the simple divider between above
+        TextView and ToggleButton-->
+
+
+
+
+    <!--This toggle button by default toggles
+        between the ON and OFF we no need to
+        set separate TextView for it-->
+
+    <ToggleButton
+        android:id="@+id/toggle_flashlight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+
+        android:layout_marginBottom="622dp"
+        android:onClick="toggleFlashLight"
+        android:textSize="25sp"
+        tools:ignore="OnClick" />
+
+    <ImageView
+
+        android:id="@+id/imageView"
+        android:layout_width="162dp"
+        android:layout_height="212dp"
+        android:layout_above="@+id/toggle_flashlight"
+        android:layout_alignParentEnd="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="121dp"
+        android:layout_marginBottom="52dp"
+        android:background="#546365"
+        app:srcCompat="@mipmap/ic_logo" />
+
+</RelativeLayout>
